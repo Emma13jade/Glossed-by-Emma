@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glossed by Emma</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fcefee;
+      color: #5a4d6c;
+    }
+    header {
+      background: #d7cfe3;
+      padding: 30px 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #3f2e56;
+    }
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #7f6a9f;
+      margin-bottom: 15px;
+    }
+    ul.services-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    ul.services-list li {
+      background: #f7e9f0;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 1px 1px 5px rgba(94, 75, 113, 0.2);
+    }
+    form {
+      background: #f7e9f0;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 1px 1px 7px rgba(94, 75, 113, 0.3);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #d1c3d9;
+      font-size: 1rem;
+    }
+    button {
+      background: #b391c8;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #7f6a9f;
+    }
+    .cash-note {
+      margin-top: 10px;
+      font-style: italic;
+      text-align: center;
+      color: #9a839e;
+    }
+    .contact-box {
+      background: #f7e9f0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 1px 1px 7px rgba(94, 75, 113, 0.3);
+      margin-top: 30px;
+    }
+    .contact-box a {
+      color: #7f6a9f;
+      text-decoration: none;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    /* Social Media Section */
+    .social-media {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .social-media a {
+      display: inline-block;
+      font-size: 1.3rem;
+      color: #7f6a9f;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #f7e9f0;
+      box-shadow: 1px 1px 5px rgba(94, 75, 113, 0.2);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .social-media a:hover {
+      background: #b391c8;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>Glossed by Emma</header>
+  <main>
+    <section>
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>Classic Manicure - $15 per set</li>
+        <li>Gel Manicure - $15 per set</li>
+        <li>Nail Art Design - $2 per nail</li>
+        <li>Polish Change - $15</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Book an Appointment</h2>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/pengilleyem/nail-appointment" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+
+      <p class="cash-note">* Cash payments only, babes </p>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:Pengilleyem@gmail.com">Pengilleyem@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:0419249032">0419 249 032</a></p>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section>
+      <h2>Follow Me</h2>
+      <div class="social-media">
+        <a href="https://www.instagram.com/glossed_by_emma" target="_blank" aria-label="Instagram" rel="noopener noreferrer"> Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Thanks for booking! I’ll contact you soon Remember, cash only! 💖");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
+
